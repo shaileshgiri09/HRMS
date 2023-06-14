@@ -1,0 +1,14 @@
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Domain\bin\Debug\net7.0\HRMS.Domain.deps.json
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Domain\bin\Debug\net7.0\HRMS.Domain.runtimeconfig.json
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Domain\bin\Debug\net7.0\HRMS.Domain.dll
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Domain\bin\Debug\net7.0\HRMS.Domain.pdb
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Domain\obj\Debug\net7.0\HRMS.Domain.csproj.AssemblyReference.cache
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Domain\obj\Debug\net7.0\HRMS.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Domain\obj\Debug\net7.0\HRMS.Domain.AssemblyInfoInputs.cache
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Domain\obj\Debug\net7.0\HRMS.Domain.AssemblyInfo.cs
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Domain\obj\Debug\net7.0\HRMS.Domain.csproj.CoreCompileInputs.cache
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Domain\obj\Debug\net7.0\HRMS.Domain.dll
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Domain\obj\Debug\net7.0\refint\HRMS.Domain.dll
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Domain\obj\Debug\net7.0\HRMS.Domain.pdb
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Domain\obj\Debug\net7.0\HRMS.Domain.genruntimeconfig.cache
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Domain\obj\Debug\net7.0\ref\HRMS.Domain.dll

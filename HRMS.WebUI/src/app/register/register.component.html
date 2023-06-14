@@ -1,0 +1,131 @@
+<div class="card" style="width: 600px;position: absolute ; left: 370px;" >
+    <div class="card-header">
+        <h1>Register</h1>
+    </div>
+    <div class="card-body">
+        <form #register="ngForm" (ngSubmit)="onSubmit(register.value)">
+            <div class="form-group mb-3">
+                <label class="form-label" >UserName</label>
+                <input type="text"
+                    name="userName"
+                    #userName="ngModel" 
+                    ngModel
+                    class="form-control" 
+                    [class.is-invalid]="userName.invalid && userName.touched"
+                    [class.is-valid]="userName.valid && userName.touched"
+                    placeholder="Enter your Username"
+                    required
+                    pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[A-Za-z\d].{5,}">
+                <div *ngIf="userName.invalid && userName.touched">
+                    <small class="text-danger" *ngIf="userName.errors!['required']">UserName is Required</small>
+                     
+                    <ul class="text-danger" *ngIf="userName.errors!['pattern']">
+                        <li>UserName minimum 5 characteer</li> 
+                        <li>UserName Contains at least one UpperCase letter</li>
+                        <li>UserName Contains number</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="form-group mb-3">
+                <label class="form-label" >Email</label>
+                <input type="email" 
+                    name="email"
+                    #email="ngModel"
+                    ngModel 
+                    class="form-control"
+                    [class.is-invalid]="email.invalid && email.touched"
+                    [class.is-valid]="email.valid && email.touched" 
+                    placeholder="Enter your email"
+                    required
+                    email
+                >
+                <div *ngIf="email.invalid && email.touched">
+                    <small class="text-danger" *ngIf="email.errors!['required']">Email is Required</small>
+                    <ul class="text-danger" *ngIf="email.errors!['email']">
+                        <li>Please Enter Valid Email</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="form-group mb-3">
+                <label class="form-label" >Phone Number</label>
+                <input type="tel" 
+                    name="phoneNumber"
+                    #phoneNumber="ngModel"
+                    ngModel 
+                    class="form-control" 
+                    placeholder="Enter your Phone Number"
+                    [class.is-invalid]="phoneNumber.invalid && phoneNumber.touched"
+                    [class.is-valid]="phoneNumber.valid && phoneNumber.touched"
+                    required
+                    pattern=""
+                >
+                <div *ngIf="phoneNumber.invalid && phoneNumber.touched">
+                    <small class="text-danger" *ngIf="phoneNumber.errors!['required']">PhoneNumber is Required</small>
+                    <ul class="text-danger" *ngIf="phoneNumber.errors!['pattern']">
+                        <li>Phone Number must be Digits</li>
+                        <li>Phone Number Must be 10 numbers</li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="form-group mb-3">
+                <label class="form-label" >Password</label>
+                <input type="password"
+                    name="password"
+                    #password="ngModel"
+                    ngModel 
+                    class="form-control"
+                    [class.is-invalid]="password.invalid && password.touched"
+                    [class.is-valid]="password.valid && password.touched"
+                    placeholder="Enter your Password"
+                    required
+                    pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z\d$@$!%*?&].{8,}">
+                <div *ngIf="password.invalid && password.touched">
+                    <small class="text-danger" *ngIf="password.errors!['required']">Password is Required</small>
+                    <ul class="text-danger" *ngIf="password.errors!['pattern']">
+                        <li>Password contains Minimum 8 Character</li>
+                        <li>Password Cantains At Least One UpperCase letter</li>
+                        <li>Password contains at least one digit</li>
+                        <li>Password contains at least one Special character</li>
+                    </ul>
+                   
+                </div>
+            </div>
+            <div class="form-group mb-3">
+                <label class="form-label" >Confirm Password</label>
+                <input type="password" 
+                    name="confirmPassword"
+                    #confirmPassword="ngModel"
+                    ngModel 
+                    class="form-control" 
+                    [class.is-invalid]="confirmPassword.invalid && confirmPassword.touched"
+                    [class.is-valid]="confirmPassword.valid && confirmPassword.touched"
+                    placeholder="Enter your Confirm Password"
+                    required
+                    pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z\d$@$!%*?&].{8,}"
+                >
+                
+                <div *ngIf="confirmPassword.invalid &&  confirmPassword.touched">
+                    <small class="text-danger" *ngIf="confirmPassword.errors!['required']">Password is Required</small>
+                    <ul class="text-danger" *ngIf=" confirmPassword.errors!['pattern']">
+                        <li>Password contains Minimum 8 Character</li>
+                        <li>Password Cantains At Least One UpperCase letter</li>
+                        <li>Password contains at least one digit</li>
+                        <li>Password contains at least one Special character</li>
+                    </ul>
+                   
+                </div>
+
+
+            </div>
+            <div class="form-group mb-3">
+                <input type="submit" [class.disabled]="register.invalid"  class="btn btn-primary" value="Register">
+            </div>
+        </form>
+    </div>
+  </div>
+
+  

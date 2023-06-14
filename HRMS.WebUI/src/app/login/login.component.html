@@ -1,0 +1,58 @@
+<div class="card" style="width: 600px;position: absolute ; left: 370px;" >
+    <div class="card-header">
+        <h1>Login</h1>
+    </div>
+    <div class="card-body">
+
+        <form #form="ngForm" (ngSubmit)="onSubmit(form.value)">
+            {{form.value | json}}
+            <div class="form-group mb-3">
+                <label class="form-label" >EmailOrUserName</label>
+                <input type="text" 
+                    class="form-control" 
+                    name="emailOrUserName" 
+                    #userName="ngModel" 
+                    ngModel 
+                    [class.is-invalid]="userName.invalid && userName.touched"
+                    [class.is-valid]="userName.valid && userName.touched" 
+                    placeholder="Enter your Email Or Username" required>
+                <div *ngIf="userName.invalid">
+                    <small class="text-danger" *ngIf="userName.errors!['required'] && userName.touched">Email or UserName Can't be blank</small>
+                </div>
+                
+            </div>
+            <div class="form-group mb-3">
+                <label class="form-label" >Password</label>
+                <input type="password"
+                    class="form-control" 
+                    name="password" 
+                    ngModel 
+                    #password="ngModel"
+                    [class.is-invalid]="password.invalid && password.touched"
+                    [class.is-valid]="password.valid && password.touched" 
+                    pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z\d$@$!%*?&].{8,}"
+                    placeholder="Enter your Password" required>
+
+                    <div *ngIf="password.invalid && password.touched">
+                        <small class="text-danger" *ngIf="password.errors!['required'] ">Password Can't be blank</small>
+                        <ul class="text-danger" *ngIf="password.errors!['pattern']">
+                            <li>Password contains Minimum 8 Character</li>
+                        <li>Password Cantains At Least One UpperCase letter</li>
+                        <li>Password contains at least one digit</li>
+                        <li>Password contains at least one Special character</li>
+                        </ul>
+                    </div>
+            </div>
+            <div class="form-group form-check mb-3">
+                <input class="form-check-input" type="checkbox" name="rememberMe" checked #rememberMe="ngModel" ngModel >
+                <label class="form-check-label"  >RememberMe</label>
+            </div>
+            <div class="form-group mb-3">
+                <input type="submit" class="btn btn-primary" value="LogIn">
+            </div>
+        </form>
+    </div>
+  </div>
+
+  <!-- Example 1: <input [(ngModel)]="person.firstName" name="first">
+    Example 2: <input [(ngModel)]="person.firstName" [ngModelOptions]="{standalone: true}"> -->

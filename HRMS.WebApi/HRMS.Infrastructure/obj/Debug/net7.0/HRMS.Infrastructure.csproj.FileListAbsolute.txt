@@ -1,0 +1,17 @@
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Infrastructure\bin\Debug\net7.0\HRMS.Infrastructure.deps.json
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Infrastructure\bin\Debug\net7.0\HRMS.Infrastructure.runtimeconfig.json
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Infrastructure\bin\Debug\net7.0\HRMS.Infrastructure.dll
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Infrastructure\bin\Debug\net7.0\HRMS.Infrastructure.pdb
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Infrastructure\bin\Debug\net7.0\HRMS.Domain.dll
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Infrastructure\bin\Debug\net7.0\HRMS.Domain.pdb
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Infrastructure\obj\Debug\net7.0\HRMS.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Infrastructure\obj\Debug\net7.0\HRMS.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Infrastructure\obj\Debug\net7.0\HRMS.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Infrastructure\obj\Debug\net7.0\HRMS.Infrastructure.AssemblyInfo.cs
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Infrastructure\obj\Debug\net7.0\HRMS.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Infrastructure\obj\Debug\net7.0\HRMS.Infrastructure.csproj.CopyComplete
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Infrastructure\obj\Debug\net7.0\HRMS.Infrastructure.dll
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Infrastructure\obj\Debug\net7.0\refint\HRMS.Infrastructure.dll
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Infrastructure\obj\Debug\net7.0\HRMS.Infrastructure.pdb
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Infrastructure\obj\Debug\net7.0\HRMS.Infrastructure.genruntimeconfig.cache
+C:\Users\CS-LC-03\source\practice\HRMS\HRMS.Infrastructure\obj\Debug\net7.0\ref\HRMS.Infrastructure.dll
